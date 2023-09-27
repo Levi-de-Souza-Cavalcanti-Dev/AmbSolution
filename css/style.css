@@ -1,0 +1,411 @@
+@font-face{
+  font-family: "Inter";
+  src: url('../fonts/Inter/Inter-Thin.ttf');
+  font-weight: 100;
+}
+
+@font-face{
+  font-family: "Manrope";
+  src: url('../fonts/Manrope/Manrope-Medium.woff2');
+}
+
+@font-face{
+  font-family: "Manrope";
+  font-weight: 700;
+  src: url('../fonts/Manrope/Manrope-Bold.woff2');
+}
+
+@font-face{
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  src: url('../fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf');
+}
+
+/*GERAL*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: white;
+  color: #01110A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a{
+  color: #317200;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited{
+  color: #1565B4;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+h1.tituloConteudo{
+  padding: 30px 30px;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: WHITE;
+  /*=== SET BACKGROUND IMAGE ===*/
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("../img/grama.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h2{
+  /*FAZER!*/
+}
+
+h3{
+  font-family: "Manrope";
+  font-weight: 600;
+  font-size: 1.30em;
+  text-align: center;
+}
+
+hr{
+  margin: 0 5% 40px 5%;
+}
+
+button{
+  padding: inherit;
+  font-family: inherit;
+  background: inherit;
+  color: inherit;
+  border: inherit;
+}
+
+/*HEADER*/
+
+header{
+  font-family: "Manrope";
+  background: #003E1F;
+  position: fixed;
+  padding: 0 40px;
+  width: 100%; 
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgba(0,0,0, 0.2);
+}
+
+header a {
+  color: white;
+  border-radius: 15px 5px;
+  transition: 0.5s;
+  font-weight: normal;
+}
+
+header a:visited {
+  color: white;
+}
+
+nav a:hover{
+  color: #003E1F;
+  background: white;
+  padding: 8px 8px;
+  text-decoration: underline;
+  transition: 0.35s;
+}
+
+nav{
+  display: flex;
+  margin: 0 80px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+footer{
+  height: auto;
+  background: black;
+  margin-top: auto;
+}
+
+footer .disclaimer{
+  padding: 15px 20px;
+  color: #B3D0A9;
+  font-family: "Manrope";
+  font-size: 14px;
+  text-align: center;
+  line-height: 17px;
+  letter-spacing: 0.7px;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+/* ==== FORMULARIOS ==== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+input, textarea {
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px 5px;
+  border: solid 1.5px #002914;
+  width: 200px;
+  background: #D5D5D5;
+  font-family: "Manrope";
+}
+
+textarea {
+  height: 60px;
+}
+
+.ddd {
+  width: 30px;
+}
+
+.celular {
+  width: 140px;
+}
+
+.botao {
+  width: 120px;
+  background: #002914;
+  color: white;
+  transition: 300ms;
+}
+
+.botao:hover {
+  background: #076B39;
+}
+
+/*CONTEUDO*/
+
+#container{
+  position: static;
+  /*padding: 90px 40px 0 40px;*/
+  padding-top: 90px;
+}
+
+#conteudo{
+  flex: 1;
+  padding: 40px 40px;
+  font-family: "Manrope";
+  font-weight: 200;
+  text-align: left;
+  line-height: 25px;
+}
+
+#conteudo img{
+  border-radius: 30px 10px;
+  border: 2px solid white;
+}
+
+#conteudoTexto{
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: justify;
+  text-align: justify;
+  gap: 1em;
+}
+
+#conteudoTexto h3{
+  padding: 15px 0;
+}
+
+#conteudoTexto img{
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  align: center;
+}
+
+h1.tituloHome{
+  padding: 4em 10%;
+  text-align: center;
+  /*font-family: "Roboto Condensed";*/
+  font-family: "Roboto Slab";
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.10em;
+  color: WHITE;
+  /*=== SET BACKGROUND IMAGE ===*/
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("../img/home.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.fgAzul{
+  color: #51A6EB;
+}
+
+.fgVerde{
+  color: #8CC04F;
+}
+
+#imgComLegenda{
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px 30px;
+  padding-top: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  #imgComLegenda {
+    grid-template-columns: 220px 220px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  #imgComLegenda {
+    grid-template-columns: 220px;
+  }
+}
+
+#imgComLegenda ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  transition: 500ms;
+}
+
+#imgComLegenda a{
+  color: #003E1F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#imgComLegenda ul:hover{
+  transition: 200ms;
+}
+
+#imgComLegenda ul:hover .imgConteudos{
+  border: 2px solid #003E1F;
+}
+
+.imgConteudos{
+  width: 200px;
+  height: 150px;
+  overflow: hidden;
+}
+
+/* ==== REDES SOCIAIS ==== */
+
+p.socialTexto {
+  margin-top: 40px;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.social{
+  align: center;
+  margin: 0 auto;
+  width: 300px;
+  display: flex;
+  align-items: end;
+  gap: 30px;
+}
+
+.social a {
+  color: #003E1F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+.social img {
+  height: 40px !important;
+  width:  auto !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+@media only screen and (max-width:450px) {
+  .social {
+    gap: 0px;
+    width: 100%;
+  }
+
+  .social legend{  
+    display: none;
+  }
+}
+
+/* ==== RESPONSIVIDADE ==== */
+
+.responsivo #navBotao{
+  filter: invert(100%);
+  display: none;
+}
+
+.expanded {
+  display: block;
+}
+
+#navBotao {
+  padding: 0 0;
+}
+
+@media only screen and (max-width: 560px) {
+  header {
+    /* padding: 0 30px; */
+  }
+
+  #navBotao {
+    padding: 0 25px 0 0;
+  }
+
+  nav {
+    display: flex;
+    gap: 5%;
+    margin: 0 20%;
+  }
+
+  nav.navLinks {
+    margin: 0 auto 0 0;
+  }
+
+  .noDisplay{
+    display: none;
+  }
+
+  .responsivo #navBotao{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #conteudoTexto{
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #conteudoTexto img {
+    width: 400px;
+  }
+}
